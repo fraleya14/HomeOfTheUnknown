@@ -1,1 +1,1 @@
-DirectoryIndex https://www.homeoftheunknown.com/Home.html
+DirectoryIndex https://fraleya14.github.io/HomeOfTheUnknown/Home.html

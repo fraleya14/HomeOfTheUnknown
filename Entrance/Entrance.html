@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:link    {
+                font-size: 30px;
+                text-decoration: none;
+                background-color: #05174D;
+                margin-top: 250px;
+                margin-right: 500px;
+                margin-left: 500px;
+                margin-bottom: 500px;
+                padding: 5px;
+                position: absolute;
+                font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+            }
+        a:visited {
+            color: #C0E2B5;
+            background-color: #05174D;
+            text-decoration: none;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+        }
+        a:hover   {
+            color: #ff0000;
+            background-color: #FFFFFF;
+            text-decoration: underline;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+        }
+        a:active  {
+            color: #FFFFFF;
+            text-decoration: none;
+            background-color: #05174D;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+        }
+        
+        #section{
+            height: 900px;
+            width: 1000px;
+            text-align: left;
+            padding: 225px;
+            bottom: auto;
+            position: absolute;
+            
+        }
+   
+        body {
+            background-image: url("Creatures/Pictures/Dark-forest.jpg");
+    	    height: 900px;
+            width: 1440px;
+            background-position: fixed;
+            
+        }
+        
+        input[type= "password"] {
+            background-color: #214D9E;
+            color: white;
+            height: 50px;
+            width: 150px;
+            
+        }
+        form {
+            color: white;
+        }
+       textarea {
+        	background-color: #B39ECA;
+        	color: #D80D0D;
+        	font-size: 30px;
+		    height:auto; 
+		    width:auto; 
+        	
+        }
+        </style>
+        
+    </head>
+    
+    <body>
+    	<title>ENTRANCE</title>
+        <div id="section">
+            <CENTER>
+           <textarea autofocus readonly="-moz-read-only" rows="8" col="60" wrap="hard">Welcome Draht! I am sure you can guess the new password. However, I can not make things too easy for you.  ~Misu 
+          </textarea>
+                <form>
+                    <label for="password">Password:</label>
+                    <input type="password" value= "" name="text1" id="password"/>
+                    <input type="button" value="Enter" name="Submit" onClick=javascript:passWord(text1.value,"Draht") id="password" />
+                </form>
+                <script>
+                	var selfw;
+                	var winr;
+                	function passWord(text1,text2) {
+                        if (text1==text2)
+                        {
+                            alert('Welcome to The Land of Creatures');
+                            <!-- selfw = self.window; -->  
+                            winr=window.open("Creatures/HomePage.html");
+                            <!-- selfw.close(); -->
+                           
+                           
+                        }
+                        else {
+                            alert('Access Denied - Password Incorrect, Please Try Again.','Password');
+                            location.reload();
+                        }
+                    }
+		</script>
+            </CENTER>
+        </div>
+    </body>
+</html>    
+    
+    

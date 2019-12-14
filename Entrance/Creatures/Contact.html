@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>	
+
+<head>
+<style>
+#header {
+    background-color: black;
+    color: #C0E2B5;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: auto;
+}
+
+#nav {
+	line-height: 30px;
+	background-image: url("Pictures/Moon.jpg");
+	background-repeat: no-repeat;
+    background-position: center center;
+	color: white;
+	padding: 25px;
+    position: fixed;
+    top: 90px;
+    right: 0%;
+	left: 0%;
+	bottom: auto;
+}
+
+a:link    {color:#000000; background-color:transparent; text-decoration:none}
+a:visited {color:#000000; background-color:transparent; text-decoration:none}
+a:hover   {color:#ff0000; background-color:transparent; text-decoration:underline}
+a:active  {color:#ff0000; background-color:transparent; text-decoration:underline}
+
+
+#section {
+    line-height: 30px;
+    text-align:center-left;
+    padding: 5px;
+    top: 270px;
+    right: 100px;
+    left: 150px;
+    bottom: auto;
+    position: absolute;
+}
+
+#Welcome{
+    word-wrap: normal;
+    font-size: 30px;
+}
+
+#landscape {
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    left: 0px;
+    bottom: auto;  
+}
+	
+button {
+	background-color: transparent;
+	outline: hidden;
+}
+body {
+    background-image: url("Pictures/Background.jpg");
+    height: 900px;
+    width: 1440px;
+    background-position: fixed;
+}
+</style>
+</head>
+
+<body>
+	
+<div id="header">
+<title>Contact Me</title>
+<h1>Contact Me</h1>
+</div>
+
+<div id="landscape">
+    <script>
+		var web;
+		var selfw;
+		var winr;
+		function goBack()
+		{
+			web = window.history.back();
+			if(web == "HomePage.html")
+			{
+				selfw=self.window();
+				winr=window.open("/Entrance/Creatures/HomePage.html");
+				selfw.close();
+			}
+			if(web == "/Entrance/Home.html")
+			{
+				selfw=self.window;
+				winr=window.open("/Entrance/Home.html");
+				selfw.close();
+			}
+		}
+	</script>
+
+	<div id="nav">
+		<button type="button" onclick="goBack()"> [Home] </button> <a href="Creatures.html"> [Creatures] </a>
+	</div>
+</div>
+
+
+
+
+<div id="section">
+    <br>
+    <textarea id="Welcome" readonly="readonly" rows="6" cols="50">
+        Have an questions about the website?  Contact me.
+        
+        Email: ashvamp5612@homeoftheunknown.x10.bz
+    </textarea>
+</body>
+</html>
+		

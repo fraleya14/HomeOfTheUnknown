@@ -1,1 +1,1 @@
-DirectoryIndex /HomeOfTheUnknown/Entrance/Home.html
+DirectoryIndex https://www.homeoftheunknown.com/Home.html

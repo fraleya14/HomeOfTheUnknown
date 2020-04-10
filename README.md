@@ -1,2 +1,2 @@
 # HomeOfTheUnknown
- Website creating for a story in development
+ Website created for a story in development
